@@ -1,31 +1,39 @@
-body {
-    background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0,1);
+    flex: 1;
 }
 
-h1{
+h1 {
     color: #2c3e50;
     font-size: 20px;
 }
 
-p{
+p {
     color: #34495e;
     font-size: 18px;
 }
 
-img{
+img {
     width: 100%;
     max-width: 500px;
     margin-top: 15px;
@@ -53,9 +61,61 @@ img:hover {
 }
 
 footer {
-    margin-top: 30px;
-    padding: 10px;
+    margin-top: auto;
+    padding: 15px;
     background: #2c3e50;
     color: white;
     font-size: 14px;
+    width: 100%;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p,
+.dark-mode b {
+    color: #dddddd;
+}
+
+.dark-mode .container {
+    background: #1f1f1f;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode footer {
+    background: #1f1f1f;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#darkModeToggle:hover {
+    background: #222;
+}
+
+.dark-mode .btn {
+    background: #555;
+    color: #fff;
+}
+
+.dark-mode .btn:hover {
+    background: #777;
 }
