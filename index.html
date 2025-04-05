@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Guide</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
 </head>
 <script src="script.js"></script>
 
@@ -16,14 +17,17 @@
         <p>Explore beautiful places all around the world and choose your next trip!</p>
         <img src="luca-bravo-O453M2Liufs-unsplash.jpg" alt="" width="300">
 
-        <audio src="">Audio element not supported</audio>
-
-        <a href="#destinations" class="btn">Explore</a>
+        <audio controls autoplay loop hidden>
+            <source src="lofi.mp3"type="audio/mpeg">
+            Audio not supported.
+        </audio>
+        <a href="destinations.html" class="btn">Explore</a>
+        <a href="tips.html">Tips!</a>
 
         <img src="" alt="">
         <h2 id="destinations">Popular destinations</h2>
         <p><b>New York, Tokyo, Paris</b>- The best places around the world to visit!</p>
-
+        <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">⬆</button>
         <footer>
             <p>&copy; 2025 Travel Guide | All rights reserved.</p>
         </footer>
