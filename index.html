@@ -10,23 +10,29 @@
 <script src="script.js"></script>
 
 <body>
+
     <div class="container">
         <button id="darkModeToggle">Toggle Dark Mode</button>
-
         <h1>Welcome to a travel guide!</h1>
         <p>Explore beautiful places all around the world and choose your next trip!</p>
         <img src="luca-bravo-O453M2Liufs-unsplash.jpg" alt="" width="300">
-
         <audio controls autoplay loop hidden>
-            <source src="lofi.mp3"type="audio/mpeg">
+            <source src="lofi.mp3" type="audio/mpeg">
             Audio not supported.
         </audio>
         <a href="destinations.html" class="btn">Explore</a>
         <a href="tips.html">Tips!</a>
-
-        <img src="" alt="">
-        <h2 id="destinations">Popular destinations</h2>
-        <p><b>New York, Tokyo, Paris</b>- The best places around the world to visit!</p>
+        <div class="animated-box">Plan your next adventure!</div>
+        <div class="responsive-container">
+            <h2>Why Travel?</h2>
+            <p>Traveling opens your mind, refreshes your soul, and creates unforgettable memories.</p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">Adventure</div>
+            <div class="grid-item">Relaxation</div>
+            <div class="grid-item">Culture</div>
+            <div class="grid-item">Nature</div>
+        </div>
         <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">⬆</button>
         <footer>
             <p>&copy; 2025 Travel Guide | All rights reserved.</p>
