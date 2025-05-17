@@ -33,6 +33,117 @@
             <div class="grid-item">Culture</div>
             <div class="grid-item">Nature</div>
         </div>
+        
+        <div class="blog-section">
+            <h2>Travel Stories</h2>
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <img src="santorini.jpg" alt="Santorini">
+                    <div class="blog-content">
+                        <h3>Sunsets in Santorini</h3>
+                        <p>An unforgettable island with greek sunsets and villages look as if they were whitewashed!</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <img src="alps.jpeg" alt="Alps">
+                    <div class="blog-content">
+                        <h3>Hiking in Alps</h3>
+                        <p>Charming alpine towns with trails through breathtaking mountain scenery.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">What's the best time to travel?</div>
+                <div class="faq-answer">It depends on where you want to go! Research the local climate and events in advance for a great experience</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do I save money while traveling?</div>
+                <div class="faq-answer">Book flights in advance, travel off-season, and look for local deals and free attractions.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Is it safe to travel solo?</div>
+                <div class="faq-answer">Yes, with proper planning and awareness. Always research your destination and stay alert.</div>
+            </div>
+        </div>
+
+        <div class="weather-widget" id="weatherWidget">
+            <div class="weather-header">Weather</div>
+            <div class="weather-location" id="weatherLocation">Loading...</div>
+            <div class="weather-temp" id="weatherTemp"></div>
+            <div class="weather-desc" id="weatherDesc"></div>
+        </div>
+
+        <div class="currency-converter">
+            <h2>Currency Converter</h2>
+            <div class="converter-row">
+                <input type="number" id="amount" placeholder="Amount" min="0" value="1">
+                <select id="fromCurrency"></select>
+                <span>to</span>
+                <select id="toCurrency"></select>
+                <button id="convertBtn" class="btn">Convert</button>
+            </div>
+            <div id="conversionResult"></div>
+        </div>
+
+        <div class="map-section">
+            <h2>Explore Destinations</h2>
+            <div id="map" style="height: 350px; width: 100%; border-radius: 12px; margin: 0 auto;"></div>
+        </div>
+
+        <div class="packing-checklist">
+            <h2>Packing Checklist</h2>
+            <div class="checklist-controls">
+                <input type="text" id="newItemInput" placeholder="Add item...">
+                <button id="addItemBtn" class="btn">Add</button>
+            </div>
+            <ul id="checklist">
+            </ul>
+        </div>
+
+        <section class="container" id="budget-planner-section">
+          <h2>Budget Planner</h2>
+          <div class="budget-planner">
+            <div class="budget-inputs">
+              <input type="number" id="budgetTotal" placeholder="Total Budget" min="0">
+              <button id="setBudgetBtn">Set Budget</button>
+            </div>
+            <div class="budget-add-expense">
+              <input type="text" id="expenseName" placeholder="Expense Name">
+              <input type="number" id="expenseAmount" placeholder="Amount" min="0">
+              <button id="addExpenseBtn">Add Expense</button>
+            </div>
+            <div class="budget-summary">
+              <div>Total Budget: <span id="displayBudget">0</span></div>
+              <div>Total Spent: <span id="displaySpent">0</span></div>
+              <div>Remaining: <span id="displayRemaining">0</span></div>
+            </div>
+            <ul id="expenseList" class="expense-list"></ul>
+          </div>
+        </section>
+
+        <section class="container" id="trip-countdown-section">
+          <h2>Trip Countdown</h2>
+          <div class="trip-countdown">
+            <input type="date" id="tripDate">
+            <button id="setTripDateBtn">Set Trip Date</button>
+            <div id="countdownDisplay"></div>
+          </div>
+        </section>
+
+        <section class="container" id="travel-quote-section">
+          <h2>Random Travel Quote</h2>
+          <div class="travel-quote-box">
+            <div id="travelQuoteText">Click below for inspiration!</div>
+            <button id="newQuoteBtn">New Quote</button>
+          </div>
+        </section>
+
         <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">⬆</button>
         <footer>
             <p>&copy; 2025 Travel Guide | All rights reserved.</p>
@@ -42,5 +153,7 @@
     <a href="itz.anshkumar@gmail.com"><p>Need Help?</p></a>
 </div>
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </body>
 </html>
