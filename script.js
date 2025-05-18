@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const darkModeToggle = document.getElementById("darkModeToggle");
     if (darkModeToggle) {
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const backToTopButton = document.getElementById("backToTopBtn");
     window.onscroll = function() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        if (document.body.scrollTop > 172 || document.documentElement.scrollTop > 172) {
             backToTopButton.style.display = "block";
         } else {
             backToTopButton.style.display = "none";
