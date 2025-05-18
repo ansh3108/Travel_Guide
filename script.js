@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-
     const backToTopButton = document.getElementById("backToTopBtn");
     window.onscroll = function() {
         if (document.body.scrollTop > 172 || document.documentElement.scrollTop > 172) {
@@ -22,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.scrollToTop = function() {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
-
     document.querySelectorAll('.faq-question').forEach(q => {
         q.addEventListener('click', function() {
             this.classList.toggle('active');
@@ -34,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-
     async function fetchWeather(city) {
         const apiKey = 'YOUR_API_KEY';
         const url = `https://openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -56,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('weatherDesc').textContent = '';
         }
     }
-
     function getWeatherByLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(pos => {
@@ -88,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     getWeatherByLocation();
-
     const currencyList = ["USD","EUR","INR","GBP","JPY","CAD","AUD","CNY","SGD","ZAR"];
     const fromCurrency = document.getElementById('fromCurrency');
     const toCurrency = document.getElementById('toCurrency');
@@ -104,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function() {
         fromCurrency.value = "USD";
         toCurrency.value = "INR";
     }
-
     document.getElementById('convertBtn').onclick = function() {
         const amount = parseFloat(document.getElementById('amount').value);
         const from = fromCurrency.value;
@@ -133,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('conversionResult').textContent = 'Conversion error';
         }
     }
-
     const map = L.map('map').setView([20, 0], 2);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
@@ -148,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function() {
     destinations.forEach(dest => {
         L.marker(dest.coords).addTo(map).bindPopup(dest.name);
     });
-
     const starterItems = [
         'Passport',
         'Tickets',
@@ -159,7 +151,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const checklist = document.getElementById('checklist');
     const newItemInput = document.getElementById('newItemInput');
     const addItemBtn = document.getElementById('addItemBtn');
-
     function renderChecklist() {
         checklist.innerHTML = '';
         items.forEach((item, idx) => {
@@ -203,7 +194,6 @@ document.addEventListener("DOMContentLoaded", function() {
     newItemInput.addEventListener('keydown', function(e) {
         if (e.key === 'Enter') addItemBtn.click();
     });
-
     const budgetTotal = document.getElementById('budgetTotal');
     const setBudgetBtn = document.getElementById('setBudgetBtn');
     const expenseName = document.getElementById('expenseName');
@@ -254,7 +244,6 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     updateBudgetUI();
     renderExpenses();
-
     const tripDateInput = document.getElementById('tripDate');
     const setTripDateBtn = document.getElementById('setTripDateBtn');
     const countdownDisplay = document.getElementById('countdownDisplay');
@@ -289,7 +278,6 @@ document.addEventListener("DOMContentLoaded", function() {
             updateCountdown(dateStr);
         }
     };
-
     const travelQuotes = [
       "The world is a book and those who do not travel read only one page. – Saint Augustine",
       "Traveling – it leaves you speechless, then turns you into a storyteller. – Ibn Battuta",
