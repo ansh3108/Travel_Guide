@@ -278,6 +278,7 @@ document.addEventListener("DOMContentLoaded", function() {
             updateCountdown(dateStr);
         }
     };
+
     const travelQuotes = [
       "The world is a book and those who do not travel read only one page. – Saint Augustine",
       "Traveling – it leaves you speechless, then turns you into a storyteller. – Ibn Battuta",

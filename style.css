@@ -5,7 +5,6 @@ body {
   padding: 0;
 }
 
-
 body {
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -17,13 +16,11 @@ body {
   animation: gradientBG 15s ease infinite;
 }
 
-
 @keyframes gradientBG {
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
   100% { background-position: 0% 50% }
 }
-
 
 .container {
   max-width: 600px;
@@ -36,18 +33,15 @@ body {
   flex: 1;
 }
 
-
 h1 {
   color: #2c3e50;
   font-size: 20px;
 }
 
-
 p {
   color: #34495e;
   font-size: 18px;
 }
-
 
 img {
   width: 100%;
@@ -57,11 +51,9 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
-
 img:hover {
   transform: scale(1.05);
 }
-
 
 .btn {
   display: inline-block;
@@ -76,13 +68,11 @@ img:hover {
   box-shadow: 0 2px 8px rgba(44,62,80,0.12);
 }
 
-
 .btn:hover {
   background: #3a66b0;
   transform: scale(1.08) rotate(-2deg);
   box-shadow: 0 6px 24px rgba(44,62,80,0.24);
 }
-
 
 footer {
   margin-top: auto;
@@ -94,21 +84,15 @@ footer {
   backdrop-filter: blur(8px);
 }
 
-
-
 body {
   background-color: #ffffff;
 }
-
-
 
 .dark-mode {
   background: linear-gradient(135deg, #24243e 0%, #302b63 50%, #0f0c29 100%);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 }
-
-
 
 .dark-mode h1,
 .dark-mode h2,
@@ -117,28 +101,19 @@ body {
   color: #dddddd;
 }
 
-
-
-
 .dark-mode .container {
   background: rgba(39, 47, 61, 0.95);
   box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 }
-
-
 
 .dark-mode footer {
   background: #212734;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
-
-
 #darkModeToggle {
   display: none;
 }
-
-
 
 .dark-mode-label {
   position: fixed;
@@ -152,23 +127,17 @@ body {
   z-index: 100;
 }
 
-
-
 .dark-mode-label:hover {
   background: #222;
 }
-
-
 
 #darkModeToggle:checked ~ body {
   background: linear-gradient(135deg, #24243e 0%, #302b63 50%, #0f0c29 100%);
 }
 
-
 #darkModeToggle:checked ~ body .container {
   background: rgba(39, 47, 61, 0.95); 
 }
-
 
 #darkModeToggle:checked ~ body h1,
 #darkModeToggle:checked ~ body h2,
@@ -176,7 +145,6 @@ body {
 #darkModeToggle:checked ~ body b {
   color: #dddddd;
 }
-
 
 .container ul {
   background: #ffffff;
@@ -188,22 +156,18 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
-
 .container ul li {
   color: #2c3e50;
 }
-
 
 .dark-mode .container ul li {
   background: #1c1c1c;
   color: #e0e0e0;
 }
 
-
 .dark-mode .container ul li b {
   color: #ffffff;
 }
-
 
 #backToTopBtn {
   display: block;
@@ -223,12 +187,10 @@ body {
   transition: background 0.3s, transform 0.2s ease;
 }
 
-
 #backToTopBtn:hover {
   background-color: #2980b9;
   transform: scale(1.1);
 }
-
 
 .animated-box {
   margin: 20px auto;
@@ -243,19 +205,15 @@ body {
   box-shadow: 0 0 0 0 #f9a826;
 }
 
-
 @keyframes bounce {
   0%, 100% { transform: translateY(0);}
   50% { transform: translateY(-18px);}
 }
 
-
 @keyframes glow {
   0% { box-shadow: 0 0 0 0 #f9a826; }
   100% { box-shadow: 0 0 24px 8px #fbc059; }
-
 }
-
 
 .responsive-container {
   margin: 20px auto;
@@ -266,30 +224,25 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .responsive-container h2 {
   font-size: 24px;
   color: #2c3e50;
 }
-
 
 .responsive-container p {
   font-size: 16px;
   color: #34495e;
 }
 
-
 .blog-section {
   margin: 40px 0 30px 0;
 }
-
 .blog-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
 }
-
 .blog-card {
   position: relative;
   overflow: hidden;
@@ -298,12 +251,10 @@ body {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-
 .blog-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
-
 
 .blog-card::after {
   content: '';
@@ -318,47 +269,39 @@ body {
   pointer-events: none;
 }
 
-
 .blog-card:hover::after {
   left: -30%;
 }
-
 
 .blog-content {
   padding: 18px 16px 16px 16px;
   flex: 1;
 }
-
 .blog-content h3 {
   margin: 0 0 8px 0;
   color: #2c3e50;
   font-size: 20px;
 }
-
 .blog-content p {
   color: #34495e;
   font-size: 15px;
   margin-bottom: 12px;
 }
 
-
 .faq-section {
   margin: 2rem 0;
 }
-
 
 .faq-item {
   position: relative;
   margin-bottom: 10px;
 }
 
-
 .faq-item input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
-
 
 .faq-item label {
   display: block;
@@ -371,11 +314,9 @@ body {
   transition: all 0.3s;
 }
 
-
 .faq-item label:hover {
   background: #dbeafe;
 }
-
 
 .faq-content {
   max-height: 0;
@@ -386,18 +327,15 @@ body {
   transition: max-height 0.4s, padding 0.3s;
 }
 
-
 .faq-item input:checked ~ .faq-content {
   max-height: 200px;
   padding: 14px 18px;
 }
 
-
 .faq-item input:checked ~ label {
   background: #dbeafe;
   border-radius: 8px 8px 0 0;
 }
-
 
 .grid-container {
   display: grid;
@@ -406,7 +344,6 @@ body {
   margin: 40px 0 30px 0;
   padding: 5px;
 }
-
 
 .grid-item {
   background: rgba(255, 255, 255, 0.9);
@@ -417,17 +354,14 @@ body {
   transform-origin: center;
 }
 
-
 .grid-item:hover {
   transform: translateY(-6px) scale(1.04);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-
 .shadow-pulse {
   animation: shadowPulse 2s infinite;
 }
-
 
 @keyframes shadowPulse {
   0% { box-shadow: 0 0 0 0 rgba(74, 128, 237, 0.4); }
@@ -435,20 +369,17 @@ body {
   100% { box-shadow: 0 0 0 0 rgba(74, 128, 237, 0); }
 }
 
-
 .weather-widget, .currency-converter, .trip-countdown, .travel-quote-box, .budget-planner {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   overflow: hidden;
 }
 
-
 .map-section {
   position: relative;
   overflow: hidden;
   margin: 2rem 0;
 }
-
 
 .static-map {
   position: relative;
@@ -459,7 +390,6 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-
 
 .map-marker {
   position: absolute;
@@ -474,41 +404,34 @@ body {
   cursor: pointer;
 }
 
-
 .map-marker:hover {
   transform: translate(-50%, -50%) scale(1.3);
 }
-
 
 .marker-santorini {
   top: 36%;
   left: 55%;
 }
 
-
 .marker-alps {
   top: 29%;
   left: 49%;
 }
-
 
 .marker-tokyo {
   top: 35%;
   left: 82%;
 }
 
-
 .marker-cape-town {
   top: 70%;
   left: 52%;
 }
 
-
 .marker-sydney {
   top: 69%;
   left: 86%;
 }
-
 
 .marker-tooltip {
   position: absolute;
@@ -520,12 +443,9 @@ body {
   pointer-events: none;
 }
 
-
-
 .map-marker:hover + .marker-tooltip {
   display: block;
 }
-
 
 .packing-checklist {
   background: linear-gradient(135deg, #f9f7fe 0%, #e3f0fc 100%);
@@ -537,7 +457,6 @@ body {
   overflow: hidden;
 }
 
-
 .packing-checklist h2 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -545,7 +464,6 @@ body {
   position: relative;
   display: inline-block;
 }
-
 
 .packing-checklist h2:after {
   content: "";
@@ -558,13 +476,11 @@ body {
   border-radius: 2px;
 }
 
-
 .checklist-controls {
   display: flex;
   gap: 12px;
   margin-bottom: 20px;
 }
-
 
 #newItemInput {
   flex: 1;
@@ -576,21 +492,17 @@ body {
   transition: all 0.3s;
 }
 
-
-
 #newItemInput:focus {
   border-color: #4e78c4;
   box-shadow: 0 0 0 3px rgba(78,120,196,0.2), inset 0 2px 4px rgba(0,0,0,0.05);
   outline: none;
 }
 
-
 #checklist {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 
 .checklist-item {
   background: white;
@@ -605,7 +517,6 @@ body {
   animation: slideIn 0.3s forwards;
 }
 
-
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -617,12 +528,10 @@ body {
   }
 }
 
-
 .checklist-item:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transform: translateY(-2px);
 }
-
 
 .checklist-item input[type="checkbox"] {
   width: 22px;
@@ -634,19 +543,16 @@ body {
   transition: all 0.3s;
 }
 
-
 .checklist-item input[type="checkbox"]:checked + span {
   text-decoration: line-through;
   color: #97a6b5;
 }
-
 
 .checklist-item span {
   flex: 1;
   font-size: 16px;
   transition: color 0.2s;
 }
-
 
 .checklist-item button {
   background: none;
@@ -658,12 +564,12 @@ body {
   transition: all 0.2s;
 }
 
-
 .checklist-item button:hover {
   background: rgba(255,118,117,0.1);
   transform: scale(1.1);
 }
 
+/* Budget Planner - Enhanced */
 .budget-planner {
   background: linear-gradient(135deg, #f5f7fa 0%, #dcecff 100%);
   border-radius: 20px;
@@ -676,7 +582,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .budget-planner h2 {
   color: #2d4886;
   font-size: 28px;
@@ -685,14 +590,12 @@ body {
   letter-spacing: 1px;
   text-align: center;
 }
-
 .budget-inputs {
   display: flex;
   gap: 14px;
   margin-bottom: 22px;
   justify-content: center;
 }
-
 #budgetTotal {
   flex: 1;
   padding: 14px 18px;
@@ -703,13 +606,11 @@ body {
   background: #fafdff;
   transition: all 0.3s;
 }
-
 #budgetTotal:focus {
   border-color: #4e78c4;
   box-shadow: 0 0 0 3px rgba(78,120,196,0.13);
   outline: none;
 }
-
 #setBudgetBtn {
   background: linear-gradient(145deg, #4e78c4, #3a66b0);
   color: white;
@@ -721,19 +622,16 @@ body {
   box-shadow: 0 4px 14px rgba(78,120,196,0.13);
   transition: all 0.3s;
 }
-
 #setBudgetBtn:hover {
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 8px 24px rgba(78,120,196,0.18);
 }
-
 .budget-add-expense {
   display: flex;
   gap: 12px;
   margin-bottom: 22px;
   justify-content: center;
 }
-
 #expenseName, #expenseAmount {
   flex: 1;
   padding: 14px 18px;
@@ -744,13 +642,11 @@ body {
   background: #fafdff;
   transition: all 0.3s;
 }
-
 #expenseName:focus, #expenseAmount:focus {
   border-color: #4e78c4;
   box-shadow: 0 0 0 3px rgba(78,120,196,0.13);
   outline: none;
 }
-
 #addExpenseBtn {
   background: linear-gradient(145deg, #4e78c4, #3a66b0);
   color: white;
@@ -762,12 +658,10 @@ body {
   box-shadow: 0 4px 14px rgba(78,120,196,0.13);
   transition: all 0.3s;
 }
-
 #addExpenseBtn:hover {
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 8px 24px rgba(78,120,196,0.18);
 }
-
 .budget-summary {
   background: #fff;
   border-radius: 14px;
@@ -778,7 +672,6 @@ body {
   margin-bottom: 22px;
   box-shadow: 0 4px 18px rgba(44,62,80,0.06);
 }
-
 .budget-summary div {
   text-align: center;
   padding: 12px 0;
@@ -789,34 +682,29 @@ body {
   box-shadow: 0 2px 8px rgba(44,62,80,0.03);
   transition: all 0.3s;
 }
-
 #displayBudget {
   color: #3a66b0;
   font-size: 22px;
   display: block;
   margin-top: 5px;
 }
-
 #displaySpent {
   color: #e17055;
   font-size: 22px;
   display: block;
   margin-top: 5px;
 }
-
 #displayRemaining {
   color: #00b894;
   font-size: 22px;
   display: block;
   margin-top: 5px;
 }
-
 .expense-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .expense-list li {
   background: #fff;
   padding: 16px 18px;
@@ -830,7 +718,6 @@ body {
   animation: fadeIn 0.4s forwards;
   font-size: 16px;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -841,17 +728,14 @@ body {
     transform: translateY(0);
   }
 }
-
 .expense-list li:hover {
   box-shadow: 0 6px 18px rgba(44,62,80,0.10);
   transform: translateY(-2px) scale(1.03);
 }
-
 .expense-list li .expense-amount {
   font-weight: bold;
   color: #e17055;
 }
-
 .expense-list li button {
   background: linear-gradient(145deg, #e17055, #ff7675);
   border: none;
@@ -864,23 +748,19 @@ body {
   transition: all 0.2s;
   box-shadow: 0 2px 8px rgba(225,112,85,0.08);
 }
-
 .expense-list li button:hover {
   background: linear-gradient(145deg, #ff7675, #e17055);
   transform: scale(1.12);
   box-shadow: 0 4px 16px rgba(225,112,85,0.16);
 }
 
-
-
-
+/* Decorative Background Circles - Enhanced */
 .decorative-elements {
   position: relative;
   width: 100%;
   height: 0;
   pointer-events: none;
 }
-
 .decorative-circle {
   position: absolute;
   border-radius: 50%;
@@ -889,7 +769,6 @@ body {
   opacity: 0.7;
   box-shadow: 0 8px 40px 0 rgba(91,134,229,0.12);
 }
-
 .circle-1 {
   width: 380px;
   height: 380px;
@@ -898,7 +777,6 @@ body {
   left: -180px;
   animation: float 12s ease-in-out infinite;
 }
-
 .circle-2 {
   width: 240px;
   height: 240px;
@@ -908,8 +786,7 @@ body {
   animation: float 14s ease-in-out infinite 1s;
 }
 
-
-
+/* Image Gallery - Enhanced */
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -917,7 +794,6 @@ body {
   margin: 48px 0 32px 0;
   padding: 0 10px;
 }
-
 .gallery-image {
   border-radius: 16px;
   overflow: hidden;
@@ -928,13 +804,11 @@ body {
   transition: all 0.35s cubic-bezier(.25,.8,.25,1);
   background: #f7fafc;
 }
-
 .gallery-image:hover {
   transform: scale(1.09) rotate(-2deg);
   box-shadow: 0 12px 36px rgba(44,62,80,0.22);
   z-index: 2;
 }
-
 .gallery-image img {
   position: absolute;
   top: 0;
@@ -945,13 +819,11 @@ body {
   filter: saturate(1.15) contrast(1.08) brightness(1.04);
   transition: filter 0.3s;
 }
-
 .gallery-image:hover img {
   filter: saturate(1.3) contrast(1.15) brightness(1.08) blur(0.5px);
 }
 
-
-
+/* Extra Travel Tips Section - Enhanced */
 .extra-tips-section {
   background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
   border-radius: 20px;
@@ -963,7 +835,6 @@ body {
   margin-right: auto;
   position: relative;
 }
-
 .extra-tips-section h2 {
   color: #2c3e50;
   font-size: 28px;
@@ -972,14 +843,12 @@ body {
   text-align: center;
   font-weight: 700;
 }
-
 .extra-tips-section ul {
   text-align: left;
   margin: 0 auto;
   max-width: 520px;
   padding-left: 0;
 }
-
 .extra-tips-section li {
   margin-bottom: 14px;
   font-size: 17px;
@@ -992,7 +861,6 @@ body {
   box-shadow: 0 2px 8px rgba(44,62,80,0.04);
   transition: background 0.2s;
 }
-
 .extra-tips-section li:before {
   content: '✈️';
   margin-right: 12px;
@@ -1002,8 +870,6 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-
 .extra-tips-section li:hover {
   background: #e3f0fc;
 }
-
