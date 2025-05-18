@@ -569,172 +569,155 @@ body {
   transform: scale(1.1);
 }
 
+/* Budget Planner - Enhanced */
 .budget-planner {
   background: linear-gradient(135deg, #f5f7fa 0%, #dcecff 100%);
-  border-radius: 16px;
-  padding: 30px;
-  margin: 32px 0;
-  box-shadow: 0 10px 40px rgba(0,48,90,0.08);
+  border-radius: 20px;
+  padding: 36px 28px 32px 28px;
+  margin: 40px 0 32px 0;
+  box-shadow: 0 12px 48px rgba(44,62,80,0.10);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   overflow: hidden;
 }
-
 .budget-planner h2 {
   color: #2d4886;
-  font-size: 26px;
-  margin-bottom: 24px;
-  position: relative;
-  display: inline-block;
+  font-size: 28px;
+  margin-bottom: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
 }
-
-.budget-planner h2:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 70%;
-  height: 3px;
-  background: linear-gradient(to right, #3a66b0, transparent);
-  border-radius: 2px;
-}
-
 .budget-inputs {
   display: flex;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 14px;
+  margin-bottom: 22px;
+  justify-content: center;
 }
-
 #budgetTotal {
   flex: 1;
-  padding: 14px 16px;
-  border: 1px solid #cde0f7;
-  border-radius: 8px;
-  font-size: 16px;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  padding: 14px 18px;
+  border: 1.5px solid #b3c6e0;
+  border-radius: 10px;
+  font-size: 17px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+  background: #fafdff;
   transition: all 0.3s;
 }
-
 #budgetTotal:focus {
   border-color: #4e78c4;
-  box-shadow: 0 0 0 3px rgba(78,120,196,0.2), inset 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 0 0 3px rgba(78,120,196,0.13);
   outline: none;
 }
-
 #setBudgetBtn {
   background: linear-gradient(145deg, #4e78c4, #3a66b0);
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 13px 26px;
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(78,120,196,0.2);
+  box-shadow: 0 4px 14px rgba(78,120,196,0.13);
   transition: all 0.3s;
 }
-
 #setBudgetBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(78,120,196,0.3);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(78,120,196,0.18);
 }
-
 .budget-add-expense {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 22px;
+  justify-content: center;
 }
-
 #expenseName, #expenseAmount {
   flex: 1;
-  padding: 14px 16px;
-  border: 1px solid #cde0f7;
-  border-radius: 8px;
-  font-size: 16px;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  padding: 14px 18px;
+  border: 1.5px solid #b3c6e0;
+  border-radius: 10px;
+  font-size: 17px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+  background: #fafdff;
   transition: all 0.3s;
 }
-
 #expenseName:focus, #expenseAmount:focus {
   border-color: #4e78c4;
-  box-shadow: 0 0 0 3px rgba(78,120,196,0.2), inset 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 0 0 3px rgba(78,120,196,0.13);
   outline: none;
 }
-
 #addExpenseBtn {
   background: linear-gradient(145deg, #4e78c4, #3a66b0);
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 13px 26px;
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(78,120,196,0.2);
+  box-shadow: 0 4px 14px rgba(78,120,196,0.13);
   transition: all 0.3s;
 }
-
 #addExpenseBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(78,120,196,0.3);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(78,120,196,0.18);
 }
-
 .budget-summary {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 0 18px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  gap: 18px;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 18px rgba(44,62,80,0.06);
 }
-
 .budget-summary div {
   text-align: center;
-  padding: 12px;
+  padding: 12px 0;
   border-radius: 8px;
   font-weight: 600;
+  font-size: 17px;
+  background: linear-gradient(90deg, #fafdff 60%, #eaf1fb 100%);
+  box-shadow: 0 2px 8px rgba(44,62,80,0.03);
   transition: all 0.3s;
 }
-
 #displayBudget {
   color: #3a66b0;
-  font-size: 20px;
+  font-size: 22px;
   display: block;
   margin-top: 5px;
 }
-
 #displaySpent {
   color: #e17055;
-  font-size: 20px;
+  font-size: 22px;
   display: block;
   margin-top: 5px;
 }
-
 #displayRemaining {
   color: #00b894;
-  font-size: 20px;
+  font-size: 22px;
   display: block;
   margin-top: 5px;
 }
-
 .expense-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .expense-list li {
-  background: white;
-  padding: 16px;
+  background: #fff;
+  padding: 16px 18px;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 10px rgba(44,62,80,0.04);
   transition: transform 0.2s, box-shadow 0.2s;
   animation: fadeIn 0.4s forwards;
+  font-size: 16px;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -745,339 +728,30 @@ body {
     transform: translateY(0);
   }
 }
-
 .expense-list li:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(44,62,80,0.10);
+  transform: translateY(-2px) scale(1.03);
 }
-
 .expense-list li .expense-amount {
   font-weight: bold;
   color: #e17055;
 }
-
 .expense-list li button {
-  background: none;
+  background: linear-gradient(145deg, #e17055, #ff7675);
   border: none;
-  color: #ff7675;
+  color: white;
   cursor: pointer;
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-left: 10px;
   transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(225,112,85,0.08);
 }
-
 .expense-list li button:hover {
-  background: rgba(255,118,117,0.1);
-  transform: scale(1.1);
-}
-
-.trip-countdown {
-  background: linear-gradient(135deg, #e6f7ff 0%, #d7f0fa 100%);
-  border-radius: 16px;
-  padding: 28px;
-  margin: 32px 0;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.trip-countdown:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 150px;
-  height: 150px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="rgba(0,184,228,0.1)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>') no-repeat;
-  background-size: 150px;
-  opacity: 0.2;
-  z-index: 0;
-}
-
-.trip-countdown h2 {
-  color: #0086ad;
-  font-size: 26px;
-  margin-bottom: 24px;
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-}
-
-.trip-countdown h2:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 70%;
-  height: 3px;
-  background: linear-gradient(to right, #00b4d8, transparent);
-  border-radius: 2px;
-}
-
-#tripDate {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #b8e5f5;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-bottom: 16px;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
-  transition: all 0.3s;
-}
-
-#tripDate:focus {
-  border-color: #00b4d8;
-  box-shadow: 0 0 0 3px rgba(0,180,216,0.2), inset 0 2px 4px rgba(0,0,0,0.05);
-  outline: none;
-}
-
-#setTripDateBtn {
-  background: linear-gradient(145deg, #00b4d8, #0096c7);
-  color: white;
-  border: none;
-  width: 100%;
-  padding: 14px 20px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,180,216,0.2);
-  transition: all 0.3s;
-}
-
-#setTripDateBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0,180,216,0.3);
-}
-
-#countdownDisplay {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  font-size: 24px;
-  font-weight: bold;
-  color: #0096c7;
-}
-
-#countdownDisplay div {
-  text-align: center;
-  padding: 10px;
-}
-
-#countdownDisplay span {
-  display: block;
-  font-size: 14px;
-  font-weight: normal;
-  color: #718096;
-  margin-top: 5px;
-}
-
-.travel-quote-box {
-  background: linear-gradient(135deg, #fff8e1 0%, #ffe8cc 100%);
-  border-radius: 16px;
-  padding: 32px;
-  margin: 32px 0;
-  box-shadow: 0 10px 40px rgba(90,48,0,0.08);
-  position: relative;
-  overflow: hidden;
-}
-
-.travel-quote-box:before, .travel-quote-box:after {
-  content: '"';
-  font-family: Georgia, serif;
-  font-size: 120px;
-  position: absolute;
-  opacity: 0.08;
-  line-height: 0;
-}
-
-.travel-quote-box:before {
-  top: 40px;
-  left: 10px;
-}
-
-.travel-quote-box:after {
-  bottom: 0;
-  right: 10px;
-  transform: rotate(180deg);
-}
-
-.travel-quote-box h2 {
-  color: #e67e22;
-  font-size: 26px;
-  margin-bottom: 24px;
-  position: relative;
-  display: inline-block;
-}
-
-.travel-quote-box h2:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 70%;
-  height: 3px;
-  background: linear-gradient(to right, #f39c12, transparent);
-  border-radius: 2px;
-}
-
-#travelQuoteText {
-  font-size: 20px;
-  line-height: 1.6;
-  font-style: italic;
-  color: #8b5a00;
-  margin-bottom: 30px;
-  position: relative;
-  z-index: 1;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#newQuoteBtn {
-  background: linear-gradient(145deg, #f39c12, #e67e22);
-  color: white;
-  border: none;
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(243,156,18,0.2);
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-#newQuoteBtn:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: rgba(255,255,255,0.2);
-  transition: width 0.3s;
-  z-index: -1;
-}
-
-#newQuoteBtn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(243,156,18,0.3);
-}
-
-#newQuoteBtn:hover:after {
-  width: 100%;
-}
-
-@keyframes quoteFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-#travelQuoteText.animate {
-  animation: quoteFadeIn 0.5s;
-}
-
-.static-packing-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.static-packing-item {
-  background: white;
-  padding: 14px 18px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-  transition: transform 0.2s;
-}
-
-.static-packing-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.static-packing-item span {
-  margin-left: 12px;
-}
-
-.static-budget-display {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 25px 0;
-}
-
-.static-budget-item {
-  text-align: center;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.static-budget-item.total {
-  background: rgba(58, 102, 176, 0.1);
-}
-
-.static-budget-item.spent {
-  background: rgba(225, 112, 85, 0.1);
-}
-
-.static-budget-item.remaining {
-  background: rgba(0, 184, 148, 0.1);
-}
-
-.static-budget-value {
-  font-size: 22px;
-  font-weight: bold;
-  display: block;
-  margin-top: 8px;
-}
-
-.static-countdown {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  margin: 25px 0;
-}
-
-.static-countdown-item {
-  text-align: center;
-  padding: 12px;
-  background: rgba(0, 150, 199, 0.1);
-  border-radius: 8px;
-}
-
-.static-countdown-value {
-  font-size: 26px;
-  font-weight: bold;
-  color: #0096c7;
-}
-
-.static-countdown-label {
-  font-size: 14px;
-  color: #718096;
-  margin-top: 5px;
+  background: linear-gradient(145deg, #ff7675, #e17055);
+  transform: scale(1.12);
+  box-shadow: 0 4px 16px rgba(225,112,85,0.16);
 }
 
 /* Decorative Background Circles - Enhanced */
